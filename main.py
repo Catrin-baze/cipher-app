@@ -48,8 +48,8 @@ if __name__ == '__main__':
                 key += chr(random.randint(33, 125))
             st.write('密钥：')
             st.write(key)
-            if st.button('Copy Key'):
-                pyperclip.copy(key)
+            #if st.button('Copy Key'):
+            #    pyperclip.copy(key)
             r=encrypt(key,string_data)
             st.download_button(
             label="Download data as txt",
