@@ -42,7 +42,7 @@ if __name__ == '__main__':
         genre = st.radio('select',
          ('encrypt', 'decrypt'))
         if genre=='encrypt':
-            length = st.slider('随机生成n位密钥', 0, 20, 1)
+            length = st.slider('随机生成n位密钥', 10, 100, 1)
             key = ""
             for i in range(length):
                 key += chr(random.randint(33, 125))
